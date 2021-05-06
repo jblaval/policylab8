@@ -1,1 +1,1 @@
-# policylab8
+# Sciences Po - Policy Lab (group 8)
