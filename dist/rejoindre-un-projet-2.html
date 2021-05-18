@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr" data-fr-theme>
     <head>
-        <title>Objectif ODD</title>
+        <title>Feuilles Durables</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="css/dsfr.min.css">
@@ -27,12 +27,13 @@
                                     </p>
                                 </div>
                                 <div class="fr-header__operator">
-                                    <a href="index.html" title="Logo Objectif ODD">
-                                        <img src="images/logo_main.png" class="fr-responsive-img" style="width:4.5rem;" alt="Logo Objectif ODD">
+                                    <a href="index.html" title="Logo Feuilles Durables">
+                                        <img src="images/logo_main.png" class="fr-responsive-img" style="width:4.5rem;" alt="Logo Feuilles Durables">
                                         <!-- L’alternative de l’image (attribut alt) doit impérativement être renseignée et reprendre le texte visible dans l’image -->
                                     </a>
                                 </div>              
                                 <div class="fr-header__navbar">
+                
                                     <button class="fr-btn--search fr-btn" data-fr-opened="false" aria-controls="modal-842" title="Rechercher">
                                         Rechercher
                                     </button>
@@ -49,9 +50,9 @@
                                     <div class="fr-search-bar" id="search-841" role="search">
                                         <label class="fr-label" for="search-841-input">Recherche
                                         </label>
-                                        <input class="fr-input" placeholder="Rechercher" type="search" id="search-841-input" name="search-841-input">
+                                        <input class="fr-input" placeholder="Mots-clés" type="search" id="search-841-input" name="search-841-input">
                                         <button class="fr-btn" title="Rechercher">
-                                            Rechercher
+                                            Mots-clés
                                         </button>
                                     </div>
                                 </div>
@@ -66,25 +67,25 @@
                     <nav class="fr-nav" id="navigation-845" role="navigation" aria-label="Menu principal">
                         <ul class="fr-nav__list">
                             <li class="fr-nav__item">
-                                <a class="fr-nav__link" href="index.html" target="_self">Accueil</a>
+                                <a class="fr-nav__link" href="index-2.html" target="_self">Accueil</a>
                             </li>
                             <li class="fr-nav__item">
-                                <a class="fr-nav__link" href="new_project.html" target="">Partager un projet</a>
+                                <a class="fr-nav__link" href="partager-mon-projet.html" target="">Partager mon projet</a>
                             </li>
                             <li class="fr-nav__item">
-                                <a class="fr-nav__link" href="projects.html" target="">Explorer les projets</a>
+                                <a class="fr-nav__link" href="explorer-les-projets-2.html" target="">Explorer les projets</a>
                             </li>
                             <li class="fr-nav__item">
-                                <a class="fr-nav__link" href="needs.html" target="">Rejoindre un projet</a>
+                                <a class="fr-nav__link" href="rejoindre-un-" target="">Rejoindre un projet</a>
                             </li>
                             <li class="fr-nav__item">
-                                <a class="fr-nav__link" href="index.html" target="_self">Comprendre les ODD</a>
+                                <a class="fr-nav__link" href="comprendre-les-odd-2.html" target="_self">Comprendre les ODD</a>
                             </li>
                             <li class="fr-nav__item">
-                                <a class="fr-nav__link" href="demarche.html" target="_self">Notre démarche</a>
+                                <a class="fr-nav__link" href="demarche-2.html" target="_self">Notre démarche</a>
                             </li>
                             <li class="fr-nav__item">
-                                <a class="fr-nav__link" href="index.html" target="_self"><span class="fr-fi-user-line" aria-hidden="true"></span> Me connecter</a>
+                                <a class="fr-nav__link" href="mon-profil.html"><span class="fr-fi-user-line" aria-hidden="true"></span> Nicolas</a>
                             </li>
                         </ul>
                     </nav>
@@ -94,49 +95,75 @@
 
         <div class="fr-container">
             <div class="fr-grid-row fr-grid-row--center">
-                <p class="text-input-text">Explorez les projets qui vous intéressent, trouvez des informations utiles et inspirez-vous pour votre propre projet !</p>
+                <p class="text-input-text">Contribuez à la réalisation d’un projet en mettant vos compétences et un peu de votre temps à leur disposition. 361&nbsp;projets ont besoin de vous !</p>
             </div>
             <div class="fr-mb-12v fr-grid-row fr-grid-row--gutters">
-                <div class="fr-col-12 fr-col-md-4">
+                <div class="fr-col-12 fr-col-md-4 fr-sidemenu fr-sidemenu--sticky">
                     <div class="fr-mb-12v fr-search-bar" id="search-925" role="search">
-                        <input class="fr-input" placeholder="Mots-clés" type="search" id="search-925-input" name="search-925-input">
+                        <input class="fr-input" placeholder="Rechercher" type="search" id="search-925-input" name="search-925-input">
                         <button class="fr-btn" title="Rechercher">
-                            Mots-clés
+                            Rechercher
                         </button>
                     </div>
                     <h4>Filtres</h4>
-                    <div class="fr-mb-3v">
-                        <strong>Enjeux concernés</strong>
+                    <strong>Type de mission</strong>
+                    <select class="fr-select" id="select" name="select">
+                        <option value="" selected="" disabled="" hidden="">Choisissez une mission</option>
+                        <option value="0">Toutes les missions</option>
+                        <option value="1">Événementiel</option>
+                        <option value="2">Développement web ou mobile</option>
+                        <option value="3">Vidéo et multimédia</option>
+                        <option value="4">Design</option>
+                        <option value="5">Appui juridique</option>
+                        <option value="6">Transport</option>
+                        <option value="7">Animation de réseaux sociaux</option>
+                        <option value="8">Démarchage</option>
+                        <option value="9">Autre</option>
+                    </select>
+                    <br/>
+                    <strong>Durée de la mission</strong>
+                    <div class="fr-checkbox-group">
+                        <input type="checkbox" id="checkbox-1" name="checkbox-1">
+                        <label class="fr-label" for="checkbox-1">un jour
+
+                        </label>
                     </div>
+                    <div class="fr-checkbox-group">
+                        <input type="checkbox" id="checkbox-2" name="checkbox-2">
+                        <label class="fr-label" for="checkbox-2">une semaine
+                        </label>
+                    </div>
+                    <div class="fr-checkbox-group">
+                        <input type="checkbox" id="checkbox-3" name="checkbox-3">
+                        <label class="fr-label" for="checkbox-3">un mois ou plus
+                        </label>
+                    </div>
+                    <br/>
+                    <strong>Niveau conseillé</strong>
+                    <div class="fr-checkbox-group">
+                        <input type="checkbox" id="checkbox-5" name="checkbox-5">
+                        <label class="fr-label" for="checkbox-5">Débutant
+    
+                        </label>
+                    </div>
+                    <div class="fr-checkbox-group">
+                        <input type="checkbox" id="checkbox-6" name="checkbox-6">
+                        <label class="fr-label" for="checkbox-6">Intermédiaire
+                        </label>
+                    </div>
+                    <div class="fr-checkbox-group">
+                        <input type="checkbox" id="checkbox-7" name="checkbox-7">
+                        <label class="fr-label" for="checkbox-7">Avancé
+                        </label>
+                    </div>
+                    <br/>
+                    <strong>Enjeux concernés</strong>
                     <a class="fr-tag fr-mb-3v" style="color:#e2061f;background-color: #fee9eb;" href="#">Pauvreté, inégalités, discriminations</a>
                     <a class="fr-tag fr-mb-3v" style="color: #004b84; background-color: #daebf9;" href="#">Climat, biodiversité, ressources</a>
                     <a class="fr-tag fr-mb-3v" style="color: #931730; background-color: #f8d2da;" href="#">Éducation, habitudes, mode de vie</a>
                     <a class="fr-tag fr-mb-3v" style="color: #3ea635; background-color: #def4dc;" href="#">Santé, bien-être, alimentation</a>
                     <a class="fr-tag fr-mb-3v" style="color: #d18c0e; background-color: #fcefd6;" href="#">Démocratie, citoyenneté, territoires</a>
                     <a class="fr-tag fr-mb-3v" style="color: #1f3162; background-color: #e0e4f0;" href="#">International, paix, solidarité</a>
-                    <br/>
-                    <strong>Organisme de rattachement</strong>
-                    <select class="fr-select" id="select" name="select">
-                        <option value="" selected="" disabled="" hidden="">Choisissez un organisme</option>
-                        <option value="0">Tous les organismes</option>
-                        <option value="1">Premier Ministre</option>
-                        <option value="2">Ministère de l'Europe et des Affaires étrangères</option>
-                        <option value="3">Ministère de la Transition écologique</option>
-                        <option value="5">Ministère de l'Éducation nationale, de la Jeunesse et des Sports</option>
-                        <option value="6">Ministère de l'Économie, des Finances et de la Relance</option>
-                        <option value="7">Ministère des Armées</option>
-                        <option value="7">Ministère de l'Intérieur</option>
-                        <option value="7">Ministère du Travail, de l'Emploi et de l'Insertion</option>
-                        <option value="7">Ministère des Outre-mer</option>
-                        <option value="7">Ministère de la Cohésion des territoires et des Relations avec les collectivités territoriales</option>
-                        <option value="7">Ministère de la Justice</option>
-                        <option value="7">Ministère de la Culture</option>
-                        <option value="7">Ministère des Solidarités et de la Santé</option>
-                        <option value="7">Ministère de la Mer</option>
-                        <option value="7">Ministère de l'Enseignement supérieur, de la Recherche et de l'Innovation</option>
-                        <option value="7">Ministère de l'Agriculture et de l'Alimentation</option>
-                        <option value="7">Ministère de la Transformation et de la Fonction publiques</option>
-                    </select>
                     <br/>
                     <strong>Localisation</strong>
                     <select class="fr-select" id="select" name="select">
@@ -162,69 +189,28 @@
                         <option value="18">Provence-Alpes-Côte d'Azur</option>
                     </select>
                     <br/>
-                    <strong>État du projet</strong>
-                    <div class="fr-checkbox-group">
-                        <input type="checkbox" id="checkbox-1" name="checkbox-1">
-                        <label class="fr-label" for="checkbox-1">Réalisé</label>
-                    </div>
-                    <div class="fr-checkbox-group">
-                        <input type="checkbox" id="checkbox-2" name="checkbox-2">
-                        <label class="fr-label" for="checkbox-1">En cours</label>
-                    </div>
-                    <br/>
-                    <strong>Nombre de personnes touchées</strong>
-                    <div class="fr-checkbox-group">
-                        <input type="checkbox" id="checkbox-1" name="checkbox-1">
-                        <label class="fr-label" for="checkbox-1">de 5 à 50 personnes
-
-                        </label>
-                    </div>
-                    <div class="fr-checkbox-group">
-                        <input type="checkbox" id="checkbox-2" name="checkbox-2">
-                        <label class="fr-label" for="checkbox-2">de 50 à 200 personnes
-                        </label>
-                    </div>
-                    <div class="fr-checkbox-group">
-                        <input type="checkbox" id="checkbox-3" name="checkbox-3">
-                        <label class="fr-label" for="checkbox-3">de 200 à 1000 personnes
-                        </label>
-                    </div>
-                    <div class="fr-checkbox-group">
-                        <input type="checkbox" id="checkbox-4" name="checkbox-4">
-                        <label class="fr-label" for="checkbox-4">plus de 1000 personnes
-                        </label>
-                    </div>
-                    <br/>
-                    <strong>Faisabilité</strong>
-                    <div class="fr-checkbox-group">
-                        <input type="checkbox" id="checkbox-5" name="checkbox-5">
-                        <label class="fr-label" for="checkbox-5">Facile
-    
-                        </label>
-                    </div>
-                    <div class="fr-checkbox-group">
-                        <input type="checkbox" id="checkbox-6" name="checkbox-6">
-                        <label class="fr-label" for="checkbox-6">Modérée
-                        </label>
-                    </div>
-                    <div class="fr-checkbox-group">
-                        <input type="checkbox" id="checkbox-7" name="checkbox-7">
-                        <label class="fr-label" for="checkbox-7">Ambitieuse
-                        </label>
-                    </div>
-                    <br/>
-                    <strong>Périmètre</strong>
-                    <div class="fr-checkbox-group">
-                        <input type="checkbox" id="checkbox-5" name="checkbox-5">
-                        <label class="fr-label" for="checkbox-5">Interne
-    
-                        </label>
-                    </div>
-                    <div class="fr-checkbox-group">
-                        <input type="checkbox" id="checkbox-6" name="checkbox-6">
-                        <label class="fr-label" for="checkbox-6">À rayonnement externe
-                        </label>
-                    </div>
+                    <strong>Organisme de rattachement</strong>
+                    <select class="fr-select" id="select" name="select">
+                        <option value="" selected="" disabled="" hidden="">Choisissez un organisme</option>
+                        <option value="0">Tous les organismes</option>
+                        <option value="1">Premier Ministre</option>
+                        <option value="2">Ministère de l'Europe et des Affaires étrangères</option>
+                        <option value="3">Ministère de la Transition écologique</option>
+                        <option value="5">Ministère de l'Éducation nationale, de la Jeunesse et des Sports</option>
+                        <option value="6">Ministère de l'Économie, des Finances et de la Relance</option>
+                        <option value="7">Ministère des Armées</option>
+                        <option value="7">Ministère de l'Intérieur</option>
+                        <option value="7">Ministère du Travail, de l'Emploi et de l'Insertion</option>
+                        <option value="7">Ministère des Outre-mer</option>
+                        <option value="7">Ministère de la Cohésion des territoires et des Relations avec les collectivités territoriales</option>
+                        <option value="7">Ministère de la Justice</option>
+                        <option value="7">Ministère de la Culture</option>
+                        <option value="7">Ministère des Solidarités et de la Santé</option>
+                        <option value="7">Ministère de la Mer</option>
+                        <option value="7">Ministère de l'Enseignement supérieur, de la Recherche et de l'Innovation</option>
+                        <option value="7">Ministère de l'Agriculture et de l'Alimentation</option>
+                        <option value="7">Ministère de la Transformation et de la Fonction publiques</option>
+                    </select>
                     <br/>
                     <div class="fr-mb-5v">
                         <button class="fr-btn fr-btn" title="Label bouton LG">
@@ -238,14 +224,39 @@
                             <div class="fr-tile fr-enlarge-link fr-tile--horizontal">
                                 <div class="fr-tile__body">
                                     <div class="fr-grid-row fr-grid-row--center">
-                                        <p class="fr-tile__desc"><a class="fr-tag fr-mb-3v" style="color: #004b84; background-color: #daebf9; text-align: center;" href="p_veggie.html">Climat, biodiversité, ressources</a></p>
-                                        <p class="fr-tile__desc"><a class="fr-tag" href="p_veggie.html"><span class="fr-fi-arrow-right-s-line" aria-hidden="true"></span> &nbsp; Projet en cours</a></p>
+                                        <p class="fr-tile__desc"><a class="fr-tag fr-mb-3v" style="color: #3ea635; background-color: #def4dc;" href="projet-6859019.html">Santé, bien-être, alimentation</a></p>
+                                        <p class="fr-tile__desc"><a class="fr-tag" href="projet-6859019.html">Aide juridique</a></p>
                                     </div>
                                     <h4 class="fr-tile__title">
-                                        <a class="fr-tile__link" href="p_veggie.html">Le mois sans viande</a>
+                                        <a class="fr-tile__link" href="projet-6859019.html">[Restaurant administratif BIO] Commande publique</a>
                                     </h4>
-                                    <p class="fr-card__detail">361 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" width="15" height="15"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z" fill="rgba(106,106,106,1)"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" width="15" height="15"><path fill="none" d="M0 0h24v24H0z"/><path d="M5.463 4.433A9.961 9.961 0 0 1 12 2c5.523 0 10 4.477 10 10 0 2.136-.67 4.116-1.81 5.74L17 12h3A8 8 0 0 0 6.46 6.228l-.997-1.795zm13.074 15.134A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12c0-2.136.67-4.116 1.81-5.74L7 12H4a8 8 0 0 0 13.54 5.772l.997 1.795z" fill="rgba(106,106,106,1)"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;76 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" width="15" height="15"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 3h4a8 8 0 1 1 0 16v3.5c-5-2-12-5-12-11.5a8 8 0 0 1 8-8zm2 14h2a6 6 0 1 0 0-12h-4a6 6 0 0 0-6 6c0 3.61 2.462 5.966 8 8.48V17z" fill="rgba(106,106,106,1)"/></svg></p>
-                                    <p class="fr-tile__desc">Devenir végétarien ? Plus facile en équipe ! Un challenge pour diviser par 3 son empreinte carbone alimentaire.</p>
+                                    <p class="fr-card__detail">Lille (59) • Dès que possible • Possible à distance</p>
+                                    <p class="fr-tile__desc">La mise en oeuvre du projet de restaurant administratif bio au sein de la DDTM59 a été permise par l'action de l'AMO BioHaut de France. Cette collaboration a néanmoins connu des difficultés juridiques, notamment autour du code de la commande publique. Afin de faciliter les collaborations ultérieures entre AMO et administrations publiques, nous souhaiterions consolider notre expérience et proposer un guide simple à destination à la fois aux AMO et aux administrations pour favoriser ces partenariats. NB&nbsp;:&nbsp;ce texte est fictif.</p>
+                                    <div class="fr-col-12  fr-col-md-3 fr-col-lg-3 fr-col-offset-9">
+                                        <a class="fr-link fr-fi-arrow-right-line fr-link--icon-right" href="projet-6859019.html">Je contacte <span class="fr-fi-arrow-right-s-line" aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                                <div class="fr-tile__img">
+                                    <img src="images/home_restaubio.jpg" class="fr-responsive-img" alt="">
+                                    <!-- L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fr-col-12">
+                            <div class="fr-tile fr-enlarge-link fr-tile--horizontal">
+                                <div class="fr-tile__body">
+                                    <div class="fr-grid-row fr-grid-row--center">
+                                        <p class="fr-tile__desc"><a class="fr-tag fr-mb-3v" style="color: #004b84; background-color: #daebf9; text-align: center;" href="#">Climat, biodiversité, ressources</a></p>
+                                        <p class="fr-tile__desc"><a class="fr-tag" href="projet-4181067.html">Design</a></p>
+                                    </div>
+                                    <h4 class="fr-tile__title">
+                                        <a class="fr-tile__link" href="projet-4181067.html">[1 mois pour manger éthique] Guide pratique</a>
+                                    </h4>
+                                    <p class="fr-card__detail">Puteaux (92) • Dès que possible • Possible à distance</p>
+                                    <p class="fr-tile__desc">L'équipe de "1 mois pour manger éthique" a rédigé son Petit Guide du Végétarisme sans Prise de Tête, qui est pour le moment un simple document texte de 6 pages. Nous aimerions le rendre plus attractif et plus lisible, par exemple avec une solution de PAO. Le but serait ensuite de le diffuser en format papier et numérique aux autres administrations intéressées pour franchir le pas.</p>
+                                    <div class="fr-col-12  fr-col-md-3 fr-col-lg-3 fr-col-offset-9">
+                                        <a class="fr-link fr-fi-arrow-right-line fr-link--icon-right" href="projet-4181067.html">Je contacte <span class="fr-fi-arrow-right-s-line" aria-hidden="true"></span></a>
+                                    </div>
                                 </div>
                                 <div class="fr-tile__img">
                                     <img src="images/home_veggie.jpg" class="fr-responsive-img" alt="">
@@ -257,14 +268,61 @@
                             <div class="fr-tile fr-enlarge-link fr-tile--horizontal">
                                 <div class="fr-tile__body">
                                     <div class="fr-grid-row fr-grid-row--center">
-                                        <p class="fr-tile__desc"><a class="fr-tag fr-mb-3v" style="color:#e2061f;background-color: #fee9eb;" href="#">Pauvreté, inégalités, discriminations</a></p>
-                                        <p class="fr-tile__desc"><a class="fr-tag" href="p_veggie.html"><span class="fr-fi-arrow-right-s-line" aria-hidden="true"></span> &nbsp; Projet en cours</a></p>
+                                        <p class="fr-tile__desc"><a class="fr-tag fr-mb-3v" style="color: #3ea635; background-color: #def4dc;" href="projet-4181067.html">Santé, bien-être, alimentation</a></p>
+                                        <p class="fr-tile__desc"><a class="fr-tag" href="projet-6859019.html">Design</a></p>
                                     </div>
                                     <h4 class="fr-tile__title">
-                                        <a class="fr-tile__link" href="">Formation écriture inclusive</a>
+                                        <a class="fr-tile__link" href="projet-6859019.html">[Restaurant administratif BIO] Guide d'information</a>
                                     </h4>
-                                    <p class="fr-card__detail">232 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" width="15" height="15"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z" fill="rgba(106,106,106,1)"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" width="15" height="15"><path fill="none" d="M0 0h24v24H0z"/><path d="M5.463 4.433A9.961 9.961 0 0 1 12 2c5.523 0 10 4.477 10 10 0 2.136-.67 4.116-1.81 5.74L17 12h3A8 8 0 0 0 6.46 6.228l-.997-1.795zm13.074 15.134A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12c0-2.136.67-4.116 1.81-5.74L7 12H4a8 8 0 0 0 13.54 5.772l.997 1.795z" fill="rgba(106,106,106,1)"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;154 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" width="15" height="15"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 3h4a8 8 0 1 1 0 16v3.5c-5-2-12-5-12-11.5a8 8 0 0 1 8-8zm2 14h2a6 6 0 1 0 0-12h-4a6 6 0 0 0-6 6c0 3.61 2.462 5.966 8 8.48V17z" fill="rgba(106,106,106,1)"/></svg></p>
-                                    <p class="fr-tile__desc">L'écriture inclusive détourne la langue française ou est trop illisible ? Voici un atelier pour s'approprier une écriture inclusive, claire et efficace.</p>
+                                    <p class="fr-card__detail">Lille (59) • Avant septembre 2020 • Possible à distance</p>
+                                    <p class="fr-tile__desc">Lorsque la situation sanitaire le permettra, nous envisageons de réaliser des animations ponctuelles sous le thème de la nourriture et de l'alimentation. Dans cette optique, nous souhaitons réaliser des supports de communication et de sensibilisation. En partenariat avec l'AMO BioHaut de France, nous avons d'ores et déjà une trame des documents, mais nous souhaiterions désormais en faire des supports multiples (flyer, kakémono, posters) afin de les diffuser au maximum. Nous recherchons donc une personne avec des compétence de deign pour nous accompagner dans cette réalisation. NB&nbsp;:&nbsp;ce texte est fictif.</p>
+                                    <div class="fr-col-12  fr-col-md-3 fr-col-lg-3 fr-col-offset-9">
+                                        <a class="fr-link fr-fi-arrow-right-line fr-link--icon-right" href="projet-6859019.html">Je contacte <span class="fr-fi-arrow-right-s-line" aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                                <div class="fr-tile__img">
+                                    <img src="images/home_restaubio.jpg" class="fr-responsive-img" alt="">
+                                    <!-- L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fr-col-12">
+                            <div class="fr-tile fr-enlarge-link fr-tile--horizontal">
+                                <div class="fr-tile__body">
+                                    <div class="fr-grid-row fr-grid-row--center">
+                                        <p class="fr-tile__desc"><a class="fr-tag fr-mb-3v" style="color:#e2061f;background-color: #fee9eb;" href="#">Pauvreté, inégalités, discriminations</a></p>
+                                        <p class="fr-tile__desc"><a class="fr-tag" href="#">Événementiel</a></p>
+                                    </div>
+                                    <h4 class="fr-tile__title">
+                                        <a class="fr-tile__link" href="#">[À l'écoute de la surdité] Journée de la surdité</a>
+                                    </h4>
+                                    <p class="fr-card__detail">Lyon (69) • Avant juin 2020 • Sur place</p>
+                                    <p class="fr-tile__desc">À l'occasion de la journée mondiale de la surdité, "À l'écoute de la surdité" organise un événement à destination de 400 agents de région lyonnaise. L'après-midi s'ouvrira par une pièce de théâtre en LSF et sera suivie par une table ronde parlée et signée sur l'accessibilité dans les services publics. Nous recherchons des personnes pour nous aider à animer l'événement (orienter les personnes, servir un petit goûter, accompagner les comédien.ne.s...).</p>
+                                    <div class="fr-col-12  fr-col-md-3 fr-col-lg-3 fr-col-offset-9">
+                                        <a class="fr-link fr-fi-arrow-right-line fr-link--icon-right" href="#">Je contacte <span class="fr-fi-arrow-right-s-line" aria-hidden="true"></span></a>
+                                    </div>
+                                </div> 
+                                <div class="fr-tile__img">
+                                    <img src="images/home_deaf.png" class="fr-responsive-img" alt="">
+                                    <!-- L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fr-col-12">
+                            <div class="fr-tile fr-enlarge-link fr-tile--horizontal">
+                                <div class="fr-tile__body">
+                                    <div class="fr-grid-row fr-grid-row--center">
+                                        <p class="fr-tile__desc"><a class="fr-tag fr-mb-3v" style="color:#e2061f;background-color: #fee9eb;" href="#">Pauvreté, inégalités, discriminations</a></p>
+                                        <p class="fr-tile__desc"><a class="fr-tag" href="#">Vidéo et multimédia</a></p>
+                                    </div>
+                                    <h4 class="fr-tile__title">
+                                        <a class="fr-tile__link" href="#">[Formation écriture inclusive] Couverture vidéo</a>
+                                    </h4>
+                                    <p class="fr-card__detail">Strasbourg (67) • Dès que possible • Sur place</p>
+                                    <p class="fr-tile__desc">La formation écriture inclusive a déjà permis à 400 agents de se familiariser avec les bonnes pratiques de l'écriture inclusive. Nous visons de franchir la barre des 1000 personnes avant la fin de l'année, mais pour cela nous aurions besoin de supports de communication. Nous recherchons donc une personne pour filmer quelques sessions et monter ensuite un petit clip d'une ou deux minutes pour présenter le projet.</p>
+                                    <div class="fr-col-12  fr-col-md-3 fr-col-lg-3 fr-col-offset-9">
+                                        <a class="fr-link fr-fi-arrow-right-line fr-link--icon-right" href="#">Je contacte <span class="fr-fi-arrow-right-s-line" aria-hidden="true"></span></a>
+                                    </div>
                                 </div>
                                 <div class="fr-tile__img">
                                     <img src="images/home_gender.jpg" class="fr-responsive-img" alt="">
@@ -277,35 +335,16 @@
                                 <div class="fr-tile__body">
                                     <div class="fr-grid-row fr-grid-row--center">
                                         <p class="fr-tile__desc"><a class="fr-tag fr-mb-3v" style="color:#e2061f;background-color: #fee9eb;" href="#">Pauvreté, inégalités, discriminations</a></p>
-                                        <p class="fr-tile__desc"><a class="fr-tag" href="p_veggie.html"><span class="fr-fi-arrow-right-s-line" aria-hidden="true"></span> &nbsp; Projet en cours</a></p>
+                                        <p class="fr-tile__desc"><a class="fr-tag" href="#">Design</a></p>
                                     </div>
                                     <h4 class="fr-tile__title">
-                                        <a class="fr-tile__link" href="">À l'écoute de la surdité</a>
+                                        <a class="fr-tile__link" href="#">[À l'écoute de la surdité] Création d'une affiche</a>
                                     </h4>
-                                    <p class="fr-card__detail">124 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" width="15" height="15"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z" fill="rgba(106,106,106,1)"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" width="15" height="15"><path fill="none" d="M0 0h24v24H0z"/><path d="M5.463 4.433A9.961 9.961 0 0 1 12 2c5.523 0 10 4.477 10 10 0 2.136-.67 4.116-1.81 5.74L17 12h3A8 8 0 0 0 6.46 6.228l-.997-1.795zm13.074 15.134A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12c0-2.136.67-4.116 1.81-5.74L7 12H4a8 8 0 0 0 13.54 5.772l.997 1.795z" fill="rgba(106,106,106,1)"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;76 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" width="15" height="15"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 3h4a8 8 0 1 1 0 16v3.5c-5-2-12-5-12-11.5a8 8 0 0 1 8-8zm2 14h2a6 6 0 1 0 0-12h-4a6 6 0 0 0-6 6c0 3.61 2.462 5.966 8 8.48V17z" fill="rgba(106,106,106,1)"/></svg></p>
-                                    <p class="fr-tile__desc">Grâce à cette nouvelle charte, rendons nos locaux et nos ressources accessibles à nos collègues sourds et malentendants.</p>
-                                </div>
+                                    <p class="fr-card__detail">Lyon (69) • Avant juin 2020 • Possible à distance</p>
+                                    <p class="fr-tile__desc">À l'occasion de la journée mondiale de la surdité, "À l'écoute de la surdité" organise un événement à destination de 400 agents de région lyonnaise. Afin de communiquer sur cet événement, nous aimerions disposer d'un support de communication qui représente nos objectifs et nos valeurs, donc une affiche attirante, accessible et claire, diffusable sous format numérique et papier.</p>
+                                </div> 
                                 <div class="fr-tile__img">
                                     <img src="images/home_deaf.png" class="fr-responsive-img" alt="">
-                                    <!-- L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fr-col-12">
-                            <div class="fr-tile fr-enlarge-link fr-tile--horizontal">
-                                <div class="fr-tile__body">
-                                    <div class="fr-grid-row fr-grid-row--center">
-                                        <p class="fr-tile__desc"><a class="fr-tag fr-mb-3v" style="color: #004b84; background-color: #daebf9; text-align: center;" href="p_veggie.html">Climat, biodiversité, ressources</a></p>
-                                        <p class="fr-tile__desc"><a class="fr-tag" href="p_veggie.html"><span class="fr-fi-check-line" aria-hidden="true"></span> &nbsp; Projet réalisé</a></p>
-                                    </div>
-                                    <h4 class="fr-tile__title">
-                                        <a class="fr-tile__link" href="">Restauration zéro déchet</a>
-                                    </h4>
-                                    <p class="fr-card__detail">232 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" width="15" height="15"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z" fill="rgba(106,106,106,1)"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" width="15" height="15"><path fill="none" d="M0 0h24v24H0z"/><path d="M5.463 4.433A9.961 9.961 0 0 1 12 2c5.523 0 10 4.477 10 10 0 2.136-.67 4.116-1.81 5.74L17 12h3A8 8 0 0 0 6.46 6.228l-.997-1.795zm13.074 15.134A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12c0-2.136.67-4.116 1.81-5.74L7 12H4a8 8 0 0 0 13.54 5.772l.997 1.795z" fill="rgba(106,106,106,1)"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" width="15" height="15"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 3h4a8 8 0 1 1 0 16v3.5c-5-2-12-5-12-11.5a8 8 0 0 1 8-8zm2 14h2a6 6 0 1 0 0-12h-4a6 6 0 0 0-6 6c0 3.61 2.462 5.966 8 8.48V17z" fill="rgba(106,106,106,1)"/></svg></p>
-                                    <p class="fr-tile__desc">Trop de déchets aux restaurants collectifs ? Devenez force de proposition pour un changement à fort impact mais pas si compliqué.</p>
-                                </div>
-                                <div class="fr-tile__img">
-                                    <img src="images/home_waste.png" class="fr-responsive-img" alt="">
                                     <!-- L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance -->
                                 </div>
                             </div>
@@ -393,7 +432,7 @@
                         </a>
                     </div>
                     <div class="fr-footer__content">
-                        <p class="fr-footer__content-desc">Ce site est généré et maintenu par le Commissariat Général au Développement Durable (CGDD) du Ministère de la Transition Écologique. Il s'inscrit dans le cadre de la Feuille de Route Agenda 2030 qui engage à mettre en conformité les administrations publiques avec les Objectifs de Développement Durables de l'ONU.</p>
+                        <p class="fr-footer__content-desc">Ce site est généré et maintenu par le Commissariat Général au Développement Durable (CGDD) du Ministère de la Transition Écologique. Il s'inscrit dans le cadre de la Feuille de Route Agenda 2030 qui engage l'État à mettre en conformité les administrations publiques avec les Objectifs de Développement Durable de l'ONU.</p>
                         <ul class="fr-footer__content-list">
                             <li class="fr-footer__content-item">
                                 <a class="fr-footer__content-link" href="https://legifrance.gouv.fr">legifrance.gouv.fr</a>
